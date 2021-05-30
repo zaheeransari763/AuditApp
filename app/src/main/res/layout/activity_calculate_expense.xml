@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculateExpenseActivity"
+    android:background="@drawable/login">
+<!--THIS IS DEMOafh-->
+    <LinearLayout
+        android:id="@+id/bankBalanceLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Balance: "
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Rs."
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/bankBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textColorHint="#000"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expenseBalanceLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bankBalanceLay"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Expense: "
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Rs."
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+            android:id="@+id/expenseBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+                android:textColor="#000"
+                android:textColorHint="#000"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculateExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expenseBalanceLay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="34dp"
+        android:background="#8C9EFF"
+        android:textColor="#fff"
+        android:layout_marginEnd="154dp"
+        android:gravity="center"
+        android:text="Calculate!" />
+
+    <LinearLayout
+        android:id="@+id/leftBalanceLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateExp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your net saving: "
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Rs."
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+        <TextView
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:id="@+id/leftBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/login">
+
+    <TextView
+        android:id="@+id/phone_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Enter Your Credentials:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="210dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/phone"
+            android:ems="10"
+            android:hint="Enter Number:"
+            android:inputType="phone"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:drawableLeft="@drawable/pin"
+            android:id="@+id/code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:hint="Enter OTP:"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="250dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/SendButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Send Verification"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="590dp"
+        android:background="#8C9EFF" />
+</RelativeLayout>
+
+
+
+
+
+
+

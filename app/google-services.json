@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "795994190105",
+    "firebase_url": "https://auditapp-6cb1e.firebaseio.com",
+    "project_id": "auditapp-6cb1e",
+    "storage_bucket": "auditapp-6cb1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795994190105:android:f8f33f9d8346e012",
+        "android_client_info": {
+          "package_name": "com.example.auditapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795994190105-qapklo1iefcphflpll2onbqq3sjkcdpn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.auditapp",
+            "certificate_hash": "0c2f1a6feda43dc20237a06f18d3b01a123bd64a"
+          }
+        },
+        {
+          "client_id": "795994190105-jiaiba1dg7paj8319c5fjou52f44glqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.auditapp",
+            "certificate_hash": "3daa3d336cfb2b42c2429b5b01b0f093ddb175df"
+          }
+        },
+        {
+          "client_id": "795994190105-lb60en37sa2t72uvhf082ehkkc732pp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiCha6FJ9YxpbzsGIZNh2tZ7wt9Tpn0pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795994190105-lb60en37sa2t72uvhf082ehkkc732pp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

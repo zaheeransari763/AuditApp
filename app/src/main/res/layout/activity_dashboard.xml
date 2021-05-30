@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainscreen"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_weight="1">
+
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/white_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="19dp"
+            android:text="Audit"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/main_profile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/profiles" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="clientLogout"
+                android:src="@drawable/logout">
+
+            </ImageView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"
+            android:text="Total Balance"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs."
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/mainbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textColor="#ffffff"
+                android:textColorHint="#fff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sub"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-50dp"
+            android:src="@drawable/sub" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="-65dp"
+            android:src="@drawable/add_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Welcome:"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/accountownername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Account Holder Name"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp">
+
+            <TextView
+                android:id="@+id/quotetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“It’s good to have money and the things that money can buy, but it’s good, too, to check up once in a while and make sure that you haven’t lost the things that money can’t buy.”"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/checkBalance"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="Check Savings" />
+    </LinearLayout>
+
+
+</LinearLayout>
